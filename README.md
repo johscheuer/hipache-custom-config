@@ -1,8 +1,8 @@
-# Hipache with config-filge
+# Hipache with config-file
 
 Build th image with :
 ```
-docker build -t="myname/hipache"
+docker build -t="myname/hipache" .
 ```
 
 and run it with 
