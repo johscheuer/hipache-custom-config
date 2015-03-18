@@ -13,4 +13,9 @@ RUN mkdir -p /var/log/hipache
 
 EXPOSE 80
 
-CMD ["/usr/local/bin/hipache"] 
+ADD ./hipache-config.json /hipache-config.json
+ADD ./run.sh /run.sh
+
+RUN chmod +x /run.sh
+
+ENTRYPOINT ["/run.sh"]
